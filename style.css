@@ -203,3 +203,101 @@ footer {
 /* Animation Utility */
 .visible { opacity: 1; transform: translateY(0); }
 @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+/* =========================================
+   📱 모바일 최적화 (Responsive Design)
+   화면 너비가 768px 이하(태블릿/모바일)일 때 적용
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* 1. 전체 폰트 및 여백 조정 */
+    body {
+        overflow-x: hidden; /* 가로 스크롤 방지 */
+    }
+    h1, h2, h3 { word-break: keep-all; /* 단어 단위 줄바꿈 */ }
+
+    /* 2. 네비게이션 바 (Navbar) */
+    .navbar {
+        padding: 15px 20px; /* 여백 줄임 */
+        flex-direction: column; /* 로고와 메뉴를 위아래로 배치 */
+        gap: 15px;
+        background: rgba(0, 0, 0, 0.6); /* 모바일은 좀 더 진하게 */
+    }
+    .nav-menu {
+        gap: 15px;
+        font-size: 0.9rem;
+    }
+    .highlight-btn {
+        padding: 8px 15px;
+    }
+
+    /* 3. Hero 섹션 (메인 화면) */
+    #hero {
+        padding-top: 150px; /* 네비게이션 높이 고려 */
+        height: 120vh; /* 모바일은 스크롤이 더 짧아도 됨 */
+    }
+    .main-title {
+        font-size: 2.5rem; /* 제목 크기 축소 */
+        line-height: 1.2;
+    }
+    .slogan {
+        font-size: 1rem;
+        padding: 0 20px; /* 좌우 여백 확보 */
+    }
+    .transformation-container {
+        width: 80%; /* 이미지 크기 화면에 맞춤 */
+        height: auto;
+        aspect-ratio: 300 / 500; /* 비율 유지 */
+    }
+
+    /* 4. 캐릭터 카드 (가로 -> 세로 배치) */
+    .char-card {
+        flex-direction: column !important; /* 무조건 세로 배치 */
+        width: 100% !important; /* 고정 너비 해제 */
+        gap: 30px;
+        margin-bottom: 100px;
+    }
+    /* 카드 뒤집기 컨테이너 크기 조정 */
+    .flip-container {
+        width: 280px; /* 모바일 화면에 맞게 약간 축소 */
+        height: 450px;
+    }
+    .char-info {
+        width: 100%; /* 너비 꽉 채우기 */
+        text-align: center; /* 텍스트 중앙 정렬 */
+        padding: 0 20px;
+    }
+    .char-info h3 { font-size: 2rem; }
+
+    /* 5. 갤러리 그리드 (3열 -> 1열) */
+    .gallery-grid {
+        grid-template-columns: 1fr; /* 한 줄에 하나씩 */
+        gap: 15px;
+    }
+
+    /* 6. 공지사항 및 기타 박스 */
+    .notice-board {
+        padding: 20px;
+    }
+    .notice-board li {
+        flex-direction: column; /* 날짜와 내용을 위아래로 */
+        gap: 5px;
+    }
+    .notice-board .date {
+        font-size: 0.8rem;
+        color: #FF69B4;
+    }
+
+    /* 7. 사전예약 페이지 폼 */
+    .form-box {
+        width: 90%; /* 모바일에서 꽉 차게 */
+        padding: 30px 20px;
+    }
+    .preregister-container {
+        padding-top: 150px; /* 상단 여백 확보 */
+        height: auto; /* 내용이 많으면 늘어나게 */
+        min-height: 100vh;
+        padding-bottom: 50px;
+    }
+}
