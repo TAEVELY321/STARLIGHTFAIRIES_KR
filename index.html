@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타라이트 페어리즈 - Starlight Fairies</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo"><a href="index.html">Starlight Fairies</a></div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#characters">Characters</a></li>
+            <li><a href="preregister.html" class="highlight-btn">Pre-Register</a></li>
+        </ul>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-bg-container">
+            <div class="hero-bg pre-transform" style="background-image: url('images/타이틀_변신전.png');"></div>
+            <div class="hero-bg post-transform" style="background-image: url('images/타이틀_변신후.png');"></div>
+            
+            <div class="magic-curtain"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="main-title">Starlight Fairies</h1>
+            <p class="slogan">"빛이여, 마을의 천사들에게 닿아라!"</p>
+        </div>
+
+        <div class="scroll-down">
+            <p>SCROLL TO AWAKEN</p>
+            <span>▼</span>
+        </div>
+    </header>
+
+    <section id="worldview" class="fade-in">
+        <div class="text-box">
+            <h2>Worldview</h2>
+            <h3>별의 기억이 잠든 마을</h3>
+            <p>
+                평범한 학교, 평범한 일상.<br>
+                하지만 밤하늘의 별자리가 속삭이기 시작할 때,<br>
+                소녀들의 운명은 다시 쓰여집니다.
+            </p>
+        </div>
+    </section>
+
+    <section id="characters">
+        <h2 class="section-title">Characters</h2>
+        <p class="guide-text">※ 카드를 클릭하면 변신합니다!</p>
+
+        <div class="char-card pink-theme fade-in">
+            <div class="flip-container" onclick="this.classList.toggle('flipped')">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="placeholder-img"><span>모모카 (교복)<br>Click Me!</span></div>
+                    </div>
+                    <div class="back">
+                        <div class="placeholder-img transformed-img"><span>로제트 (변신)<br>★ Pink Rose ★</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="char-info">
+                <h3>Momoka / Rosette</h3>
+                <p class="role">Leader / Pink Rose</p>
+                <p class="desc">"어둠 속에서도 길을 잃지 마, 내가 네 별이 되어줄게."</p>
+            </div>
+        </div>
+
+        <div class="char-card blue-theme fade-in reverse">
+            <div class="char-info">
+                <h3>Umiko / Aquarius</h3>
+                <p class="role">Healer / Ocean Blue</p>
+                <p class="desc">"모든 슬픔은 바다로 흘러가기 마련이야."</p>
+            </div>
+            <div class="flip-container" onclick="this.classList.toggle('flipped')">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="placeholder-img"><span>우미코 (교복)<br>Click Me!</span></div>
+                    </div>
+                    <div class="back">
+                        <div class="placeholder-img transformed-img"><span>아쿠아리우스 (변신)<br>★ Ocean ★</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="char-card orange-theme fade-in">
+            <div class="flip-container" onclick="this.classList.toggle('flipped')">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="placeholder-img"><span>히나 (교복)<br>Click Me!</span></div>
+                    </div>
+                    <div class="back">
+                        <div class="placeholder-img transformed-img"><span>솔라리스 (변신)<br>★ Sun ★</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="char-info">
+                <h3>Hina / Solaris</h3>
+                <p class="role">Attacker / Golden Sun</p>
+                <p class="desc">"내 열정은 태양보다 뜨겁다고!"</p>
+            </div>
+        </div>
+
+        <div class="char-card villain-theme fade-in reverse">
+            <div class="char-info">
+                <h3>Hiiragi Natsumi</h3>
+                <p class="role">Antagonist / Black Star</p>
+                <p class="desc">"너희의 그 얄팍한 빛으로 무엇을 구원하겠다는 거지?"</p>
+            </div>
+            <div class="flip-container" onclick="this.classList.toggle('flipped')">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="placeholder-img"><span>나츠미 (평상시)<br>Click Me!</span></div>
+                    </div>
+                    <div class="back">
+                        <div class="placeholder-img transformed-img"><span>나츠미 (흑성교단)<br>☠ Darkness ☠</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gameplay" class="fade-in">
+        <h2 class="section-title">Game Play</h2>
+        <div class="gallery-grid">
+            <div class="placeholder-box">전투 스크린샷</div>
+            <div class="placeholder-box">스킬 컷신 GIF</div>
+            <div class="placeholder-box">로비 화면</div>
+        </div>
+        <p class="caption">화려한 스킬 연출과 전략적인 턴제 전투를 경험하세요.</p>
+    </section>
+
+    <section id="details" class="fade-in">
+        <div class="notice-board">
+            <h2>Project Schedule</h2>
+            <ul>
+                <li><span class="date">2027. TBA</span><span class="content">정식 출시 (Grand Open)</span></li>
+                <li><span class="date">2026. 12.</span><span class="content">2차 CBT 테스터 모집</span></li>
+                <li><span class="date">2026. 02.</span><span class="content">★ Stove 인디 데모 버전 공개 중 ★</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Blossom Games</h3>
+            
+            <div class="links">
+                <a href="https://x.com/STARFAIR_X" target="_blank">X (Twitter)</a>
+                <a href="https://instagram.com/blossomgames_official" target="_blank">Instagram</a>
+                <a href="https://youtube.com/@BlossomGames_Official" target="_blank">YouTube</a>
+                
+                <a href="mailto:blossomgames.kr@gmail.com">Contact Us</a>
+            </div>
+            
+            <p class="copyright">© 2026 Blossom Games. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
